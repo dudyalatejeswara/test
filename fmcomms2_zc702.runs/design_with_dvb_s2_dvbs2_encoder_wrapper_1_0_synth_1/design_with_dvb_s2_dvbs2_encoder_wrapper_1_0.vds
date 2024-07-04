@@ -1,0 +1,967 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Tue Jun 25 17:54:20 2024
+# Process ID: 166323
+# Current directory: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_synth_1
+# Command line: vivado -log design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.tcl
+# Log file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_synth_1/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.vds
+# Journal file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_synth_1/vivado.jou
+# Running On: krisemi-satcom-Vostro-3520, OS: Linux, CPU Frequency: 3000.000 MHz, CPU Physical cores: 2, Host memory: 8034 MB
+#-----------------------------------------------------------
+source design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/krisemi_satcom/adi/hdl/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/krisemi_satcom/dvb_fpga'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 166381
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2860.770 ; gain = 0.000 ; free physical = 543 ; free virtual = 2333
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-2048] function get_table does not always return a value [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/ldpc/ldpc_pkg.vhd:92]
+WARNING: [Synth 8-2048] function get_pls_rom_addr does not always return a value [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/plframe_header_pkg.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'design_with_dvb_s2_dvbs2_encoder_wrapper_1_0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0/synth/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.vhd:91]
+	Parameter INPUT_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter IQ_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'dvbs2_encoder_wrapper' declared at '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/build/vivado/dvbs2_encoder_wrapper.vhd:34' bound to instance 'U0' of component 'dvbs2_encoder_wrapper' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0/synth/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'dvbs2_encoder_wrapper' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/build/vivado/dvbs2_encoder_wrapper.vhd:82]
+INFO: [Synth 8-638] synthesizing module 'inline_config_adapter' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/inline_config_adapter.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+WARNING: [Synth 8-506] null port 's_tid' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:46]
+WARNING: [Synth 8-506] null port 'm_tid' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:53]
+CRITICAL WARNING: [Synth 8-507] null range (47 downto 48) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (47 downto 48) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+WARNING: [Synth 8-6014] Unused sequential element s_first_word_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:369]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter' (1#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_demux' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_demux' (2#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'inline_config_adapter' (3#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/inline_config_adapter.vhd:62]
+INFO: [Synth 8-638] synthesizing module 'dvbs2_encoder' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dvbs2_encoder.vhd:87]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (23 downto 24) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (23 downto 24) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference' (4#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo' (5#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized0' (5#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer' (6#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay' (7#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_debug' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'sr_delay' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay' (8#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_flow_control' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_flow_control' (9#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized0' (9#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_debug' (10#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'axi_bbframe_length_enforcer' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bbframe_length_enforcer.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'rom_inference' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+WARNING: [Synth 8-5733] ignoring attributes on constant declaration ROM [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rom_inference' (11#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized0' (11#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_frame_slicer' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_frame_slicer.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_frame_slicer' (12#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_frame_slicer.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_frame_padder' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_frame_padder.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_frame_padder' (13#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_frame_padder.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_bbframe_length_enforcer' (14#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bbframe_length_enforcer.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_baseband_scrambler' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_baseband_scrambler.vhd:59]
+WARNING: [Synth 8-6014] Unused sequential element next_lfsr_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_baseband_scrambler.vhd:118]
+INFO: [Synth 8-256] done synthesizing module 'axi_baseband_scrambler' (15#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_baseband_scrambler.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_bch_encoder' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bch_encoder.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'bch_encoder_mux' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/bch_encoder_mux.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'bch_192x8' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_192x8.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bch_192x8' (16#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_192x8.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'bch_168x8' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_168x8.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'bch_168x8' (17#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_168x8.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'bch_160x8' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_160x8.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bch_160x8' (18#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_160x8.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'bch_128x8' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_128x8.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bch_128x8' (19#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/bch_generated/bch_128x8.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'bch_encoder_mux' (20#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/bch_encoder_mux.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_bch_encoder' (21#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bch_encoder.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_ldpc_encoder' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_ldpc_table' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_fifo' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_fifo.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized0' (21#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_master_adapter' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_master_adapter' (22#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_fifo' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_fifo.vhd:61]
+INFO: [Synth 8-638] synthesizing module 'rom_inference__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+WARNING: [Synth 8-5733] ignoring attributes on constant declaration ROM [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized1' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'rom_inference__parameterized0' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized2' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized3' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized4' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_master_adapter__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_master_adapter__parameterized0' (23#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+WARNING: [Synth 8-6014] Unused sequential element tmp_frame_type_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:244]
+WARNING: [Synth 8-6014] Unused sequential element tmp_code_rate_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:245]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[addr] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[q] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[stage_0_loops] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[stage_0_rows] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[stage_1_loops] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-6014] Unused sequential element tmp_ldpc_metadata_reg[stage_1_rows] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:246]
+WARNING: [Synth 8-3936] Found unconnected internal register 'axi_out_offset_reg' and it is trimmed from '17' to '16' bits. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:371]
+INFO: [Synth 8-256] done synthesizing module 'axi_ldpc_table' (24#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_table.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_ldpc_encoder_core' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder_core.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_replicate' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_replicate.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_replicate' (25#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_replicate.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'ldpc_input_sync' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/ldpc/ldpc_input_sync.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (8 downto 9) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (8 downto 9) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized1' (25#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo__parameterized0' (25#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized1' (25#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+WARNING: [Synth 8-6014] Unused sequential element bit_count_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/ldpc/ldpc_input_sync.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ldpc_input_sync' (26#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/ldpc/ldpc_input_sync.vhd:70]
+INFO: [Synth 8-638] synthesizing module 'pipeline_context_ram' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/pipeline_context_ram.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized2' (26#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element addr_sr_reg[3] was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/pipeline_context_ram.vhd:105]
+WARNING: [Synth 8-3936] Found unconnected internal register 'en_sr_reg' and it is trimmed from '4' to '3' bits. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/pipeline_context_ram.vhd:104]
+INFO: [Synth 8-256] done synthesizing module 'pipeline_context_ram' (27#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/pipeline_context_ram.vhd:50]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_master_adapter__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_master_adapter__parameterized1' (27#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_master_adapter.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+WARNING: [Synth 8-506] null port 's_tid' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:46]
+WARNING: [Synth 8-506] null port 'm_tid' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:53]
+CRITICAL WARNING: [Synth 8-507] null range (23 downto 24) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (23 downto 24) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+WARNING: [Synth 8-6014] Unused sequential element s_first_word_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:369]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized2' (27#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+WARNING: [Synth 8-6014] Unused sequential element axi_flow_ctrl_p.tmp_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder_core.vhd:382]
+WARNING: [Synth 8-6014] Unused sequential element dbg_ldpc_data_count_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder_core.vhd:398]
+INFO: [Synth 8-256] done synthesizing module 'axi_ldpc_encoder_core' (28#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder_core.vhd:67]
+INFO: [Synth 8-256] done synthesizing module 'axi_ldpc_encoder' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_ldpc_encoder.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_demux__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_demux__parameterized0' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'axi_bit_interleaver' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer__parameterized0' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized1' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized3' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized4' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo__parameterized1' (29#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element write_side_p.wr_column_cnt_i_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:430]
+WARNING: [Synth 8-6014] Unused sequential element wr_remainder_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:408]
+WARNING: [Synth 8-6014] Unused sequential element bit_cnt_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:419]
+WARNING: [Synth 8-6014] Unused sequential element tdata_sr_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:420]
+WARNING: [Synth 8-6014] Unused sequential element rd_first_word_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:537]
+INFO: [Synth 8-256] done synthesizing module 'axi_bit_interleaver' (30#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_bit_interleaver.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_arbiter' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_mux' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_mux' (31#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_arbiter' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_constellation_mapper' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_constellation_mapper.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_demux__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+WARNING: [Synth 8-506] null port 's_tdata' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:46]
+WARNING: [Synth 8-506] null port 'm_tdata[3]' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:50]
+WARNING: [Synth 8-506] null port 'm_tdata[2]' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:50]
+WARNING: [Synth 8-506] null port 'm_tdata[1]' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:50]
+WARNING: [Synth 8-506] null port 'm_tdata[0]' ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:50]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_demux__parameterized1' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+WARNING: [Synth 8-6778] Component port with null array found, Will be ignored [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_constellation_mapper.vhd:157]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (9 downto 10) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (9 downto 10) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized5' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized5' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo__parameterized2' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized3' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (10 downto 11) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (10 downto 11) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized4' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized5' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (11 downto 12) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (11 downto 12) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized5' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_width_converter__parameterized6' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+CRITICAL WARNING: [Synth 8-507] null range (12 downto 13) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+CRITICAL WARNING: [Synth 8-507] null range (12 downto 13) not supported [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:183]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:248]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:249]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.tmp_flush_req_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:250]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:272]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_write_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:273]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_bit_buffer_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:295]
+WARNING: [Synth 8-6014] Unused sequential element g_downsize.dbg_read_size_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:296]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_width_converter__parameterized6' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_width_converter.vhd:58]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_arbiter__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_mux__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_mux__parameterized0' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_arbiter__parameterized0' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_ram' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_ram.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_credit' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_credit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_flow_control__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_flow_control__parameterized0' (32#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_credit' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_credit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized6' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'sr_delay__parameterized5' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'sr_delay__parameterized5' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sr_delay.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized6' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer__parameterized1' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized2' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized7' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized7' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo__parameterized3' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized3' (33#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_ram' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_ram.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_ram__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_ram.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_credit__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_credit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_flow_control__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_flow_control__parameterized1' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_credit__parameterized0' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_credit.vhd:59]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized8' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized8' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer__parameterized2' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized4' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'sync_fifo__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'ram_inference__parameterized9' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rddata_a_sync_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:143]
+INFO: [Synth 8-256] done synthesizing module 'ram_inference__parameterized9' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/ram_inference.vhd:60]
+WARNING: [Synth 8-6014] Unused sequential element rd_dv_reg_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:143]
+WARNING: [Synth 8-6014] Unused sequential element overflow_report_p.notified_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:174]
+INFO: [Synth 8-256] done synthesizing module 'sync_fifo__parameterized4' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/sync_fifo.vhd:63]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized5' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized5' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_ram__parameterized0' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_ram.vhd:68]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized6' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer__parameterized3' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized6' (34#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-256] done synthesizing module 'axi_constellation_mapper' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_constellation_mapper.vhd:80]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_debug__parameterized0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_flow_control__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_flow_control__parameterized2' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_flow_control.vhd:45]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_debug__parameterized0' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'axi_physical_layer_framer' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_framer.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_delay__parameterized7' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'skidbuffer__parameterized4' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'skidbuffer__parameterized4' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/skidbuffer.vhd:112]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_delay__parameterized7' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_delay.vhd:55]
+INFO: [Synth 8-638] synthesizing module 'axi_physical_layer_header' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_header.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'rom_inference__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+WARNING: [Synth 8-5733] ignoring attributes on constant declaration ROM [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rom_inference__parameterized1' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+INFO: [Synth 8-638] synthesizing module 'rom_inference__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+WARNING: [Synth 8-5733] ignoring attributes on constant declaration ROM [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rom_inference__parameterized2' (35#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_physical_layer_header' (36#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_header.vhd:73]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_demux__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_demux__parameterized2' (36#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_demux.vhd:53]
+INFO: [Synth 8-638] synthesizing module 'axi_physical_layer_pilots' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_pilots.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_mux__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_mux__parameterized1' (36#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_physical_layer_pilots' (37#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_pilots.vhd:65]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_arbiter__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_mux__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_mux__parameterized2' (37#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_mux.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_arbiter__parameterized1' (37#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'axi_physical_layer_scrambler' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_scrambler.vhd:69]
+INFO: [Synth 8-226] default block is never used [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_scrambler.vhd:160]
+INFO: [Synth 8-256] done synthesizing module 'axi_physical_layer_scrambler' (38#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_scrambler.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_arbiter__parameterized2' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_arbiter__parameterized2' (38#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-638] synthesizing module 'dummy_frame_generator' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dummy_frame_generator.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'rom_inference__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+WARNING: [Synth 8-5733] ignoring attributes on constant declaration ROM [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'rom_inference__parameterized3' (38#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/rom_inference.vhd:49]
+INFO: [Synth 8-256] done synthesizing module 'dummy_frame_generator' (39#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dummy_frame_generator.vhd:57]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_arbiter__parameterized3' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_arbiter__parameterized3' (39#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_arbiter.vhd:60]
+INFO: [Synth 8-256] done synthesizing module 'axi_physical_layer_framer' (40#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/axi_physical_layer_framer.vhd:74]
+INFO: [Synth 8-638] synthesizing module 'axi_stream_debug__parameterized1' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-256] done synthesizing module 'axi_stream_debug__parameterized1' (40#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/fpga_cores/src/axi_stream_debug.vhd:69]
+INFO: [Synth 8-638] synthesizing module 'dvbs2_encoder_regs' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:65]
+WARNING: [Synth 8-6014] Unused sequential element read_fsm.v_addr_hit_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:447]
+WARNING: [Synth 8-6014] Unused sequential element read_fsm.v_mem_addr_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:482]
+WARNING: [Synth 8-6014] Unused sequential element write_fsm.v_addr_hit_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:1020]
+WARNING: [Synth 8-6014] Unused sequential element write_fsm.v_mem_addr_reg was removed.  [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:1101]
+INFO: [Synth 8-256] done synthesizing module 'dvbs2_encoder_regs' (41#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/third_party/airhdl/dvbs2_encoder_regs.vhd:65]
+WARNING: [Synth 8-3848] Net user2regs[ldpc_fifo_status_ldpc_fifo_entries] in module/entity dvbs2_encoder does not have driver. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dvbs2_encoder.vhd:146]
+WARNING: [Synth 8-3848] Net user2regs[ldpc_fifo_status_ldpc_fifo_empty] in module/entity dvbs2_encoder does not have driver. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dvbs2_encoder.vhd:146]
+WARNING: [Synth 8-3848] Net user2regs[ldpc_fifo_status_ldpc_fifo_full] in module/entity dvbs2_encoder does not have driver. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dvbs2_encoder.vhd:146]
+INFO: [Synth 8-256] done synthesizing module 'dvbs2_encoder' (42#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/rtl/dvbs2_encoder.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'dvbs2_encoder_wrapper' (43#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ipshared/24ed/build/vivado/dvbs2_encoder_wrapper.vhd:82]
+INFO: [Synth 8-256] done synthesizing module 'design_with_dvb_s2_dvbs2_encoder_wrapper_1_0' (44#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0/synth/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.vhd:91]
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module rom_inference__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken in module rom_inference__parameterized2 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module rom_inference__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken in module rom_inference__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module axi_stream_delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module axi_stream_delay__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module axi_stream_delay__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module axi_stream_delay__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_tkeep[0] in module axi_stream_width_converter__parameterized6 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_tkeep[0] in module axi_stream_width_converter__parameterized5 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_tkeep[0] in module axi_stream_width_converter__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_tkeep[0] in module axi_stream_width_converter__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk_b in module ram_inference__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clken_b in module ram_inference__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_tkeep[0] in module axi_stream_width_converter__parameterized1 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module dvbs2_encoder_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module dvbs2_encoder_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module dvbs2_encoder_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module dvbs2_encoder_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module dvbs2_encoder_wrapper is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module dvbs2_encoder_wrapper is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2860.770 ; gain = 0.000 ; free physical = 2059 ; free virtual = 3691
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2860.770 ; gain = 0.000 ; free physical = 2025 ; free virtual = 3657
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2860.770 ; gain = 0.000 ; free physical = 2025 ; free virtual = 3657
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.17 . Memory (MB): peak = 2860.770 ; gain = 0.000 ; free physical = 2012 ; free virtual = 3644
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2968.492 ; gain = 0.000 ; free physical = 1834 ; free virtual = 3468
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.36 ; elapsed = 00:00:00.16 . Memory (MB): peak = 2968.492 ; gain = 0.000 ; free physical = 1830 ; free virtual = 3463
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2219 ; free virtual = 3847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2219 ; free virtual = 3847
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2219 ; free virtual = 3847
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_fsm_reg' in module 'axi_stream_debug'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_fsm_reg' in module 'axi_stream_debug__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'ctrl_fsm_reg' in module 'axi_stream_debug__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'read_fsm.v_state_r_reg' in module 'dvbs2_encoder_regs'
+INFO: [Synth 8-802] inferred FSM for state register 'write_fsm.v_state_r_reg' in module 'dvbs2_encoder_regs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     run |                               00 |                               00
+              block_data |                               01 |                               01
+           wait_for_last |                               10 |                               11
+           wait_for_word |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_fsm_reg' using encoding 'sequential' in module 'axi_stream_debug'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     run |                               00 |                               00
+              block_data |                               01 |                               01
+           wait_for_last |                               10 |                               11
+           wait_for_word |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_fsm_reg' using encoding 'sequential' in module 'axi_stream_debug__parameterized0'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                     run |                               00 |                               00
+              block_data |                               01 |                               01
+           wait_for_last |                               10 |                               11
+           wait_for_word |                               11 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ctrl_fsm_reg' using encoding 'sequential' in module 'axi_stream_debug__parameterized1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                            00001 |                              000
+              addr_first |                            00010 |                              001
+              data_first |                            00100 |                              010
+         update_register |                            01000 |                              011
+                    done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'write_fsm.v_state_r_reg' using encoding 'one-hot' in module 'dvbs2_encoder_regs'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                              000 |                              000
+           read_register |                              001 |                              001
+       wait_memory_rdata |                              010 |                              010
+           read_response |                              011 |                              011
+                    done |                              100 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'read_fsm.v_state_r_reg' using encoding 'sequential' in module 'dvbs2_encoder_regs'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 3308 ; free virtual = 4940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 7     
+	   2 Input   17 Bit       Adders := 3     
+	   2 Input   16 Bit       Adders := 10    
+	   3 Input   16 Bit       Adders := 2     
+	   2 Input   14 Bit       Adders := 2     
+	   2 Input   13 Bit       Adders := 2     
+	   2 Input   12 Bit       Adders := 5     
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 5     
+	   2 Input    7 Bit       Adders := 5     
+	   2 Input    6 Bit       Adders := 8     
+	   4 Input    6 Bit       Adders := 1     
+	   3 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 10    
+	   3 Input    5 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 18    
+	   3 Input    4 Bit       Adders := 5     
+	   2 Input    3 Bit       Adders := 10    
+	   2 Input    2 Bit       Adders := 42    
+	   3 Input    2 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 4     
++---XORs : 
+	   2 Input      1 Bit         XORs := 629   
+	   4 Input      1 Bit         XORs := 94    
+	   3 Input      1 Bit         XORs := 70    
+	   5 Input      1 Bit         XORs := 172   
+	   6 Input      1 Bit         XORs := 181   
+	   7 Input      1 Bit         XORs := 99    
+	   9 Input      1 Bit         XORs := 13    
+	   8 Input      1 Bit         XORs := 53    
+	  10 Input      1 Bit         XORs := 2     
+	  13 Input      1 Bit         XORs := 1     
++---Registers : 
+	              192 Bit    Registers := 1     
+	               90 Bit    Registers := 1     
+	               48 Bit    Registers := 1     
+	               44 Bit    Registers := 2     
+	               43 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
+	               32 Bit    Registers := 15    
+	               31 Bit    Registers := 2     
+	               28 Bit    Registers := 1     
+	               24 Bit    Registers := 3     
+	               19 Bit    Registers := 16    
+	               18 Bit    Registers := 3     
+	               17 Bit    Registers := 5     
+	               16 Bit    Registers := 45    
+	               15 Bit    Registers := 5     
+	               14 Bit    Registers := 1     
+	               13 Bit    Registers := 5     
+	               12 Bit    Registers := 10    
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 10    
+	                9 Bit    Registers := 18    
+	                8 Bit    Registers := 26    
+	                7 Bit    Registers := 5     
+	                6 Bit    Registers := 7     
+	                5 Bit    Registers := 13    
+	                4 Bit    Registers := 31    
+	                3 Bit    Registers := 15    
+	                2 Bit    Registers := 57    
+	                1 Bit    Registers := 259   
++---RAMs : 
+	              64K Bit	(8192 X 8 bit)          RAMs := 5     
+	              63K Bit	(4050 X 16 bit)          RAMs := 1     
++---ROMs : 
+	                    ROMs := 1     
++---Muxes : 
+	   2 Input  192 Bit        Muxes := 3     
+	   4 Input  192 Bit        Muxes := 3     
+	   2 Input  168 Bit        Muxes := 1     
+	   2 Input  160 Bit        Muxes := 1     
+	   2 Input  128 Bit        Muxes := 1     
+	   2 Input   90 Bit        Muxes := 1     
+	   2 Input   48 Bit        Muxes := 3     
+	   2 Input   44 Bit        Muxes := 1     
+	   2 Input   43 Bit        Muxes := 1     
+	   4 Input   40 Bit        Muxes := 1     
+	   2 Input   40 Bit        Muxes := 3     
+	  11 Input   32 Bit        Muxes := 1     
+	  14 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 29    
+	   8 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   7 Input   32 Bit        Muxes := 2     
+	   3 Input   32 Bit        Muxes := 3     
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   31 Bit        Muxes := 1     
+	   3 Input   31 Bit        Muxes := 1     
+	   4 Input   31 Bit        Muxes := 3     
+	   2 Input   24 Bit        Muxes := 17    
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input   22 Bit        Muxes := 1     
+	   2 Input   21 Bit        Muxes := 1     
+	   2 Input   20 Bit        Muxes := 1     
+	   2 Input   19 Bit        Muxes := 9     
+	   2 Input   18 Bit        Muxes := 3     
+	   5 Input   18 Bit        Muxes := 1     
+	   2 Input   17 Bit        Muxes := 3     
+	   2 Input   16 Bit        Muxes := 44    
+	  22 Input   16 Bit        Muxes := 1     
+	   4 Input   16 Bit        Muxes := 4     
+	   5 Input   16 Bit        Muxes := 1     
+	  32 Input   16 Bit        Muxes := 1     
+	   3 Input   16 Bit        Muxes := 7     
+	   2 Input   15 Bit        Muxes := 4     
+	   2 Input   14 Bit        Muxes := 5     
+	  41 Input   14 Bit        Muxes := 1     
+	   2 Input   13 Bit        Muxes := 12    
+	   2 Input   12 Bit        Muxes := 11    
+	   2 Input   11 Bit        Muxes := 4     
+	   4 Input   11 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 9     
+	   3 Input   10 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 10    
+	   3 Input    9 Bit        Muxes := 12    
+	   2 Input    8 Bit        Muxes := 14    
+	   4 Input    8 Bit        Muxes := 1     
+	   3 Input    8 Bit        Muxes := 5     
+	  37 Input    8 Bit        Muxes := 1     
+	   5 Input    8 Bit        Muxes := 1     
+	  21 Input    7 Bit        Muxes := 1     
+	  29 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 5     
+	   2 Input    6 Bit        Muxes := 11    
+	   3 Input    6 Bit        Muxes := 10    
+	   5 Input    6 Bit        Muxes := 2     
+	   2 Input    5 Bit        Muxes := 17    
+	  19 Input    5 Bit        Muxes := 1     
+	   6 Input    5 Bit        Muxes := 1     
+	  10 Input    5 Bit        Muxes := 1     
+	   5 Input    5 Bit        Muxes := 4     
+	   9 Input    5 Bit        Muxes := 1     
+	   3 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 58    
+	   5 Input    4 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 33    
+	   5 Input    3 Bit        Muxes := 1     
+	  51 Input    3 Bit        Muxes := 1     
+	  29 Input    2 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 117   
+	   4 Input    2 Bit        Muxes := 7     
+	   5 Input    2 Bit        Muxes := 1     
+	   3 Input    2 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 298   
+	  31 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 8     
+	  14 Input    1 Bit        Muxes := 1     
+	  11 Input    1 Bit        Muxes := 1     
+	   3 Input    1 Bit        Muxes := 5     
+	   5 Input    1 Bit        Muxes := 91    
+	   7 Input    1 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 1     
+	   8 Input    1 Bit        Muxes := 4     
+	  36 Input    1 Bit        Muxes := 1     
+	  13 Input    1 Bit        Muxes := 1     
+	  43 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+DSP Report: Generating DSP output_q, operation Mode is: A*B.
+DSP Report: operator output_q is absorbed into DSP output_q.
+DSP Report: Generating DSP output_i, operation Mode is: A*B.
+DSP Report: operator output_i is absorbed into DSP output_i.
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module dvbs2_encoder_regs is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:01 ; elapsed = 00:01:04 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2854 ; free virtual = 4985
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+ROM: Preliminary Mapping Report
++---------------------------------------------+---------------------------------------------+---------------+----------------+
+|Module Name                                  | RTL Object                                  | Depth x Width | Implemented As | 
++---------------------------------------------+---------------------------------------------+---------------+----------------+
+|inline_config_adapter                        | cfg[constellation]                          | 32x3          | LUT            | 
+|inline_config_adapter                        | cfg[code_rate]                              | 32x4          | LUT            | 
+|rom_inference                                | ROM[0]                                      | 32x13         | LUT            | 
+|rom_inference                                | ROM[0]                                      | 128x64        | LUT            | 
+|rom_inference                                | ROM[0]                                      | 128x6         | LUT            | 
+|axi_bbframe_length_enforcer                  | rom_u/ROM[0]                                | 32x13         | LUT            | 
+|axi_ldpc_table                               | rom_u/rddata_sync_reg                       | 8192x16       | Block RAM      | 
+|axi_physical_layer_header                    | pls_rom_u/ROM[0]                            | 128x64        | LUT            | 
+|dummy_frame_generator                        | header_rom_u/ROM[0]                         | 128x6         | LUT            | 
+|design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 | U0/inline_config_adapter/cfg[constellation] | 32x3          | LUT            | 
+|design_with_dvb_s2_dvbs2_encoder_wrapper_1_0 | U0/inline_config_adapter/cfg[code_rate]     | 32x4          | LUT            | 
++---------------------------------------------+---------------------------------------------+---------------+----------------+
+
+
+Block RAM: Preliminary Mapping Report (see note below)
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\U0/encoder_u /ldpc_encoder_u    | encoder_u/frame_ram_u/ram_u/ram_reg | 3 K x 16(READ_FIRST)   | W |   | 3 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[0].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[1].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[2].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[3].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[4].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+|Module Name                                      | RTL Object                                                                                                               | Inference      | Size (Depth x Width) | Primitives                   | 
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/param_fifo_u/output_adapter_u/data_buffer_reg                                                                    | Implied        | 4 x 7                | RAM32M x 2                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/output_adapter_block.axi_out_adapter_u/data_buffer_reg                                                           | Implied        | 16 x 34              | RAM32M x 6                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/param_fifo_u/ram_u/ram_reg                                                                                       | User Attribute | 2 x 6                | RAM32M x 2                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | encoder_u/input_conversion_block.ldpc_input_sync_u/input_width_conversion_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg | User Attribute | 4 x 2                | RAM16X1D x 2                 | 
+|\U0/encoder_u /ldpc_encoder_u                    | encoder_u/frame_ram_adapter_block.frame_ram_adapter_u/data_buffer_reg                                                    | Implied        | 8 x 19               | RAM32M x 4                   | 
+|\U0/encoder_u /bit_interleaver_u                 | axi_master_adapter_block.axi_master_adapter_u/data_buffer_reg                                                            | Implied        | 8 x 19               | RAM32M x 4                   | 
+|\U0/encoder_u /bit_interleaver_u                 | cfg_fifo_block.cfg_fifo_u/mem/ram_reg                                                                                    | User Attribute | 2 x 37               | RAM32M x 7                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_qpsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                      | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_8psk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                      | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_16apsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                    | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_32apsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                    | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.radius_ram_u/output_buffer_block.output_fifo_u/mem/ram_reg                                                     | User Attribute | 4 x 42               | RAM32M x 7                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.iq_map_ram_u/output_buffer_block.output_fifo_u/mem/ram_reg                                                     | User Attribute | 4 x 49               | RAM32M x 9                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.iq_map_ram_u/ram_u/ram_reg                                                                                     | User Attribute | 64 x 32              | RAM16X1D x 64 RAM32X1D x 32  | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.radius_ram_u/ram_u/ram_reg                                                                                     | User Attribute | 32 x 32              | RAM16X1D x 64                | 
+|\U0/encoder_u /\g_width_converter.force_8_bit_u  | g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                                             | User Attribute | 4 x 10               | RAM32M x 2                   | 
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+
+DSP: Preliminary Mapping Report (see note below. The ' indicates corresponding REG is set)
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name              | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|axi_constellation_mapper | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|axi_constellation_mapper | A*B         | 16     | 16     | -      | -      | 32     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++-------------------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:06 ; elapsed = 00:01:08 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2719 ; free virtual = 4850
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:06 ; elapsed = 00:01:09 . Memory (MB): peak = 2968.492 ; gain = 107.723 ; free physical = 2713 ; free virtual = 4844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name                      | RTL Object                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|\U0/encoder_u /ldpc_encoder_u    | encoder_u/frame_ram_u/ram_u/ram_reg | 3 K x 16(READ_FIRST)   | W |   | 3 K x 16(WRITE_FIRST)  |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[0].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[1].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[2].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[3].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
+|\U0/encoder_u /bit_interleaver_u | generate_rams[4].ram/ram_reg        | 8 K x 8(READ_FIRST)    | W |   | 8 K x 8(WRITE_FIRST)   |   | R | Port A and B     | 0      | 2      | 
++---------------------------------+-------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+|Module Name                                      | RTL Object                                                                                                               | Inference      | Size (Depth x Width) | Primitives                   | 
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/param_fifo_u/output_adapter_u/data_buffer_reg                                                                    | Implied        | 4 x 7                | RAM32M x 2                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/output_adapter_block.axi_out_adapter_u/data_buffer_reg                                                           | Implied        | 16 x 34              | RAM32M x 6                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | table_u/param_fifo_u/ram_u/ram_reg                                                                                       | User Attribute | 2 x 6                | RAM32M x 2                   | 
+|\U0/encoder_u /ldpc_encoder_u                    | encoder_u/input_conversion_block.ldpc_input_sync_u/input_width_conversion_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg | User Attribute | 4 x 2                | RAM16X1D x 2                 | 
+|\U0/encoder_u /ldpc_encoder_u                    | encoder_u/frame_ram_adapter_block.frame_ram_adapter_u/data_buffer_reg                                                    | Implied        | 8 x 19               | RAM32M x 4                   | 
+|\U0/encoder_u /bit_interleaver_u                 | axi_master_adapter_block.axi_master_adapter_u/data_buffer_reg                                                            | Implied        | 8 x 19               | RAM32M x 4                   | 
+|\U0/encoder_u /bit_interleaver_u                 | cfg_fifo_block.cfg_fifo_u/mem/ram_reg                                                                                    | User Attribute | 2 x 37               | RAM32M x 7                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_qpsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                      | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_8psk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                      | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_16apsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                    | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | width_converter_32apsk_u/g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                    | User Attribute | 4 x 20               | RAM32M x 4                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.radius_ram_u/output_buffer_block.output_fifo_u/mem/ram_reg                                                     | User Attribute | 4 x 42               | RAM32M x 7                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.iq_map_ram_u/output_buffer_block.output_fifo_u/mem/ram_reg                                                     | User Attribute | 4 x 49               | RAM32M x 9                   | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.iq_map_ram_u/ram_u/ram_reg                                                                                     | User Attribute | 64 x 32              | RAM16X1D x 64 RAM32X1D x 32  | 
+|\U0/encoder_u /constellation_mapper_u            | ram_block.radius_ram_u/ram_u/ram_reg                                                                                     | User Attribute | 32 x 32              | RAM16X1D x 64                | 
+|\U0/encoder_u /\g_width_converter.force_8_bit_u  | g_downsize.g_tid_fifo.tid_fifo_u/mem/ram_reg                                                                             | User Attribute | 4 x 10               | RAM32M x 2                   | 
++-------------------------------------------------+--------------------------------------------------------------------------------------------------------------------------+----------------+----------------------+------------------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[0].ram/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[0].ram/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[1].ram/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[1].ram/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[2].ram/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[2].ram/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[3].ram/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[3].ram/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[4].ram/ram_reg_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance U0/encoder_u/bit_interleaver_u/generate_rams[4].ram/ram_reg_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2721 ; free virtual = 4852
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2718 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:12 ; elapsed = 00:01:14 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2718 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2717 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:12 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2717 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2717 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2717 ; free virtual = 4849
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |CARRY4   |   198|
+|2     |DSP48E1  |     2|
+|3     |LUT1     |    82|
+|4     |LUT2     |   629|
+|5     |LUT3     |  1049|
+|6     |LUT4     |  1027|
+|7     |LUT5     |  1105|
+|8     |LUT6     |  2008|
+|9     |MUXF7    |     1|
+|10    |RAM16X1D |   130|
+|11    |RAM32M   |    49|
+|12    |RAM32X1D |    44|
+|13    |RAMB36E1 |    16|
+|19    |FDCE     |  1765|
+|20    |FDPE     |   194|
+|21    |FDRE     |  2784|
+|22    |FDSE     |    26|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.492 ; gain = 126.723 ; free physical = 2717 ; free virtual = 4849
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:09 ; elapsed = 00:01:13 . Memory (MB): peak = 2987.492 ; gain = 19.000 ; free physical = 2769 ; free virtual = 4900
+Synthesis Optimization Complete : Time (s): cpu = 00:01:13 ; elapsed = 00:01:15 . Memory (MB): peak = 2987.500 ; gain = 126.723 ; free physical = 2769 ; free virtual = 4900
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.10 ; elapsed = 00:00:00.10 . Memory (MB): peak = 2987.500 ; gain = 0.000 ; free physical = 2861 ; free virtual = 5001
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2987.500 ; gain = 0.000 ; free physical = 2867 ; free virtual = 4955
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 223 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 130 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 49 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 44 instances
+
+Synth Design complete, checksum: c27a6e01
+INFO: [Common 17-83] Releasing license: Synthesis
+258 Infos, 170 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:24 ; elapsed = 00:01:20 . Memory (MB): peak = 2987.500 ; gain = 126.836 ; free physical = 3079 ; free virtual = 5167
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_synth_1/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.dcp' has been generated.
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Coretcl 2-1174] Renamed 133 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_synth_1/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_utilization_synth.rpt -pb design_with_dvb_s2_dvbs2_encoder_wrapper_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jun 25 17:55:58 2024...

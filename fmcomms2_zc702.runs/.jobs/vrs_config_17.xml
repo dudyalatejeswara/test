@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_with_dvb_s2_util_ad9361_tdd_sync_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_tdd_sync_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_dma_0_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_dma_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_reduced_logic_0_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_reduced_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_fifo_mm_s_0_3_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_fifo_mm_s_0_3_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_vector_logic_0_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_vector_logic_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axis_clock_converter_0_2_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axis_clock_converter_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_auto_pc_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_auto_pc_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_dvbs2_encoder_wrapper_0_2_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_dvbs2_encoder_wrapper_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_ad9361_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_ad9361_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_ad9361_adc_dma_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_ad9361_adc_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_ad9361_dac_fifo_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_ad9361_dac_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_xbar_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_xbar_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hdmi_clkgen_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hdmi_clkgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hdmi_core_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hdmi_core_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hdmi_dma_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hdmi_dma_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hp0_interconnect_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hp0_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hp1_interconnect_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hp1_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_iic_main_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_iic_main_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_spdif_tx_core_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_spdif_tx_core_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_sysid_0_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_sysid_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_rom_sys_0_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_rom_sys_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_sys_200m_rstgen_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_sys_200m_rstgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_sys_audio_clkgen_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_sys_audio_clkgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_sys_ps7_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_sys_ps7_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_sys_rstgen_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_sys_rstgen_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_adc_fifo_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_adc_fifo_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_adc_pack_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_adc_pack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_dac_upack_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_dac_upack_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_divclk_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_divclk_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_divclk_reset_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_divclk_reset_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_util_ad9361_divclk_sel_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_util_ad9361_divclk_sel_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="design_with_dvb_s2_util_ad9361_tdd_sync_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_dma_0_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_reduced_logic_0_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_fifo_mm_s_0_3_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_vector_logic_0_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axis_clock_converter_0_2_synth_1"/>
+		<Parent Id="design_with_dvb_s2_auto_pc_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_dvbs2_encoder_wrapper_0_2_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_ad9361_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_ad9361_adc_dma_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_ad9361_dac_fifo_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_xbar_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hdmi_clkgen_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hdmi_core_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hdmi_dma_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hp0_interconnect_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hp1_interconnect_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_iic_main_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_spdif_tx_core_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_sysid_0_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_rom_sys_0_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_sys_200m_rstgen_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_sys_audio_clkgen_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_sys_ps7_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_sys_rstgen_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_adc_fifo_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_adc_pack_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_dac_upack_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_divclk_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_divclk_reset_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_util_ad9361_divclk_sel_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

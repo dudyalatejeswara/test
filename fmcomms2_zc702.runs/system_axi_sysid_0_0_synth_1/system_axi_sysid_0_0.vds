@@ -1,0 +1,272 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Thu Jun 20 19:09:14 2024
+# Process ID: 606005
+# Current directory: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/system_axi_sysid_0_0_synth_1
+# Command line: vivado -log system_axi_sysid_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system_axi_sysid_0_0.tcl
+# Log file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/system_axi_sysid_0_0_synth_1/system_axi_sysid_0_0.vds
+# Journal file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/system_axi_sysid_0_0_synth_1/vivado.jou
+# Running On: krisemi-satcom-Vostro-3520, OS: Linux, CPU Frequency: 3716.727 MHz, CPU Physical cores: 2, Host memory: 8034 MB
+#-----------------------------------------------------------
+source system_axi_sysid_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2857.699 ; gain = 0.023 ; free physical = 2449 ; free virtual = 5040
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/krisemi_satcom/adi/hdl/library'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: synth_design -top system_axi_sysid_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 606258
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2857.805 ; gain = 0.000 ; free physical = 1765 ; free virtual = 4276
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system_axi_sysid_0_0' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ip/system_axi_sysid_0_0/synth/system_axi_sysid_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axi_sysid' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ipshared/5682/axi_sysid.v:37]
+INFO: [Synth 8-6157] synthesizing module 'up_axi' [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'up_axi' (1#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ipshared/common/up_axi.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'axi_sysid' (2#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ipshared/5682/axi_sysid.v:37]
+INFO: [Synth 8-6155] done synthesizing module 'system_axi_sysid_0_0' (3#1) [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/system/ip/system_axi_sysid_0_0/synth/system_axi_sysid_0_0.v:57]
+WARNING: [Synth 8-7129] Port up_axi_awaddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_awaddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[3] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[2] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_wstrb[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[1] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port up_axi_araddr[0] in module up_axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[15] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[14] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[13] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[15] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[14] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[13] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module axi_sysid is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module axi_sysid is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 2857.805 ; gain = 0.000 ; free physical = 720 ; free virtual = 3297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2857.805 ; gain = 0.000 ; free physical = 624 ; free virtual = 3208
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:12 . Memory (MB): peak = 2857.805 ; gain = 0.000 ; free physical = 624 ; free virtual = 3208
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2857.805 ; gain = 0.000 ; free physical = 613 ; free virtual = 3198
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.715 ; gain = 0.000 ; free physical = 1294 ; free virtual = 3924
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2889.715 ; gain = 0.000 ; free physical = 1293 ; free virtual = 3924
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 823 ; free virtual = 2956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 822 ; free virtual = 2955
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:25 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 823 ; free virtual = 2956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 830 ; free virtual = 2926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    5 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               11 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   3 Input   32 Bit        Muxes := 1     
+	   6 Input   32 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 4     
+	   6 Input    3 Bit        Muxes := 1     
+	   2 Input    1 Bit        Muxes := 21    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3917] design system_axi_sysid_0_0 has port s_axi_bresp[1] driven by constant 0
+INFO: [Synth 8-3917] design system_axi_sysid_0_0 has port s_axi_bresp[0] driven by constant 0
+INFO: [Synth 8-3917] design system_axi_sysid_0_0 has port s_axi_rresp[1] driven by constant 0
+INFO: [Synth 8-3917] design system_axi_sysid_0_0 has port s_axi_rresp[0] driven by constant 0
+WARNING: [Synth 8-7129] Port s_axi_awaddr[15] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[14] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[13] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[1] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awaddr[0] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[2] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[1] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awprot[0] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[3] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[2] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[1] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wstrb[0] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[15] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[14] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[13] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[1] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_araddr[0] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[2] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[1] in module system_axi_sysid_0_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_arprot[0] in module system_axi_sysid_0_0 is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:30 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 656 ; free virtual = 2760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 640 ; free virtual = 2058
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 638 ; free virtual = 2057
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:41 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 612 ; free virtual = 2032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 444 ; free virtual = 1950
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 443 ; free virtual = 1949
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 441 ; free virtual = 1948
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 438 ; free virtual = 1946
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 438 ; free virtual = 1945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 438 ; free virtual = 1945
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     5|
+|3     |LUT3 |     5|
+|4     |LUT4 |    42|
+|5     |LUT5 |     5|
+|6     |LUT6 |    63|
+|7     |FDRE |   204|
+|8     |FDSE |     2|
++------+-----+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:47 . Memory (MB): peak = 2889.715 ; gain = 31.910 ; free physical = 436 ; free virtual = 1943
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:27 ; elapsed = 00:00:43 . Memory (MB): peak = 2889.715 ; gain = 0.000 ; free physical = 464 ; free virtual = 1984
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2889.723 ; gain = 31.910 ; free physical = 464 ; free virtual = 1984
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.723 ; gain = 0.000 ; free physical = 533 ; free virtual = 2053
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2889.723 ; gain = 0.000 ; free physical = 435 ; free virtual = 1966
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete, checksum: 2ccc5c9a
+INFO: [Common 17-83] Releasing license: Synthesis
+25 Infos, 41 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:55 . Memory (MB): peak = 2889.723 ; gain = 32.023 ; free physical = 498 ; free virtual = 2121
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/system_axi_sysid_0_0_synth_1/system_axi_sysid_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP system_axi_sysid_0_0, cache-ID = e4e1bcb5435a65cb
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/system_axi_sysid_0_0_synth_1/system_axi_sysid_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_axi_sysid_0_0_utilization_synth.rpt -pb system_axi_sysid_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Jun 20 19:10:29 2024...

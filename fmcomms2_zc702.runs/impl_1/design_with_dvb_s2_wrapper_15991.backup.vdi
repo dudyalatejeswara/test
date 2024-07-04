@@ -1,0 +1,1063 @@
+#-----------------------------------------------------------
+# Vivado v2021.2 (64-bit)
+# SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+# IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+# Start of session at: Wed Jun 26 12:10:37 2024
+# Process ID: 15991
+# Current directory: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1
+# Command line: vivado -log design_with_dvb_s2_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source design_with_dvb_s2_wrapper.tcl -notrace
+# Log file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper.vdi
+# Journal file: /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/vivado.jou
+# Running On: krisemi-satcom-Vostro-3520, OS: Linux, CPU Frequency: 3767.170 MHz, CPU Physical cores: 2, Host memory: 8034 MB
+#-----------------------------------------------------------
+source design_with_dvb_s2_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/krisemi_satcom/adi/hdl/library'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/krisemi_satcom/dvb_fpga'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2021.2/data/ip'.
+Command: link_design -top design_with_dvb_s2_wrapper -part xc7z020clg484-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_0/design_with_dvb_s2_axi_ad9361_0.dcp' for cell 'design_with_dvb_s2_i/axi_ad9361'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_adc_dma_0/design_with_dvb_s2_axi_ad9361_adc_dma_0.dcp' for cell 'design_with_dvb_s2_i/axi_ad9361_adc_dma'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_dac_fifo_0/design_with_dvb_s2_axi_ad9361_dac_fifo_0.dcp' for cell 'design_with_dvb_s2_i/axi_ad9361_dac_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.dcp' for cell 'design_with_dvb_s2_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_fifo_mm_s_0_3/design_with_dvb_s2_axi_fifo_mm_s_0_3.dcp' for cell 'design_with_dvb_s2_i/axi_fifo_mm_s_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp0_interconnect_0/design_with_dvb_s2_axi_hp0_interconnect_0.dcp' for cell 'design_with_dvb_s2_i/axi_hp0_interconnect'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp1_interconnect_0/design_with_dvb_s2_axi_hp1_interconnect_0.dcp' for cell 'design_with_dvb_s2_i/axi_hp1_interconnect'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_sysid_0_0/design_with_dvb_s2_axi_sysid_0_0.dcp' for cell 'design_with_dvb_s2_i/axi_sysid_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axis_clock_converter_0_2/design_with_dvb_s2_axis_clock_converter_0_2.dcp' for cell 'design_with_dvb_s2_i/axis_clock_converter_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0/design_with_dvb_s2_dvbs2_encoder_wrapper_1_0.dcp' for cell 'design_with_dvb_s2_i/dvbs2_encoder_wrapper_1'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_rom_sys_0_0/design_with_dvb_s2_rom_sys_0_0.dcp' for cell 'design_with_dvb_s2_i/rom_sys_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_200m_rstgen_0/design_with_dvb_s2_sys_200m_rstgen_0.dcp' for cell 'design_with_dvb_s2_i/sys_200m_rstgen'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_ps7_0/design_with_dvb_s2_sys_ps7_0.dcp' for cell 'design_with_dvb_s2_i/sys_ps7'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_rstgen_0/design_with_dvb_s2_sys_rstgen_0.dcp' for cell 'design_with_dvb_s2_i/sys_rstgen'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_adc_fifo_0/design_with_dvb_s2_util_ad9361_adc_fifo_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_adc_fifo'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_adc_pack_0/design_with_dvb_s2_util_ad9361_adc_pack_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_adc_pack'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_dac_upack_0/design_with_dvb_s2_util_ad9361_dac_upack_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_dac_upack'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_0/design_with_dvb_s2_util_ad9361_divclk_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_divclk'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_reset_0/design_with_dvb_s2_util_ad9361_divclk_reset_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_divclk_reset'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_sel_0/design_with_dvb_s2_util_ad9361_divclk_sel_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_divclk_sel'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_tdd_sync_0/design_with_dvb_s2_util_ad9361_tdd_sync_0.dcp' for cell 'design_with_dvb_s2_i/util_ad9361_tdd_sync'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_reduced_logic_0_0/design_with_dvb_s2_util_reduced_logic_0_0.dcp' for cell 'design_with_dvb_s2_i/util_reduced_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_vector_logic_0_0/design_with_dvb_s2_util_vector_logic_0_0.dcp' for cell 'design_with_dvb_s2_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_xbar_0/design_with_dvb_s2_xbar_0.dcp' for cell 'design_with_dvb_s2_i/axi_cpu_interconnect/xbar'
+INFO: [Project 1-454] Reading design checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_auto_pc_0/design_with_dvb_s2_auto_pc_0.dcp' for cell 'design_with_dvb_s2_i/axi_cpu_interconnect/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00.38 ; elapsed = 00:00:00.38 . Memory (MB): peak = 2861.770 ; gain = 0.000 ; free physical = 2235 ; free virtual = 4287
+INFO: [Netlist 29-17] Analyzing 2381 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2021.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_200m_rstgen_0/design_with_dvb_s2_sys_200m_rstgen_0_board.xdc] for cell 'design_with_dvb_s2_i/sys_200m_rstgen/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_200m_rstgen_0/design_with_dvb_s2_sys_200m_rstgen_0_board.xdc] for cell 'design_with_dvb_s2_i/sys_200m_rstgen/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.xdc] for cell 'design_with_dvb_s2_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0.xdc] for cell 'design_with_dvb_s2_i/axi_dma_0/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_tdd_sync/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_tdd_sync_0/util_tdd_sync_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_tdd_sync/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_reset_0/design_with_dvb_s2_util_ad9361_divclk_reset_0.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_reset_0/design_with_dvb_s2_util_ad9361_divclk_reset_0.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_reset_0/design_with_dvb_s2_util_ad9361_divclk_reset_0_board.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk_reset/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_reset_0/design_with_dvb_s2_util_ad9361_divclk_reset_0_board.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk_reset/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_adc_fifo/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_adc_fifo_0/util_wfifo_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_adc_fifo/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_rstgen_0/design_with_dvb_s2_sys_rstgen_0.xdc] for cell 'design_with_dvb_s2_i/sys_rstgen/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_rstgen_0/design_with_dvb_s2_sys_rstgen_0.xdc] for cell 'design_with_dvb_s2_i/sys_rstgen/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_rstgen_0/design_with_dvb_s2_sys_rstgen_0_board.xdc] for cell 'design_with_dvb_s2_i/sys_rstgen/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_rstgen_0/design_with_dvb_s2_sys_rstgen_0_board.xdc] for cell 'design_with_dvb_s2_i/sys_rstgen/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_ps7_0/design_with_dvb_s2_sys_ps7_0.xdc] for cell 'design_with_dvb_s2_i/sys_ps7/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_ps7_0/design_with_dvb_s2_sys_ps7_0.xdc] for cell 'design_with_dvb_s2_i/sys_ps7/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_200m_rstgen_0/design_with_dvb_s2_sys_200m_rstgen_0.xdc] for cell 'design_with_dvb_s2_i/sys_200m_rstgen/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_sys_200m_rstgen_0/design_with_dvb_s2_sys_200m_rstgen_0.xdc] for cell 'design_with_dvb_s2_i/sys_200m_rstgen/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_xfer_cntrl_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_5478_psr_aclk_0.xdc] for cell 'design_with_dvb_s2_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_5478_psr_aclk_0.xdc] for cell 'design_with_dvb_s2_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_5478_psr_aclk_0_board.xdc] for cell 'design_with_dvb_s2_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp1_interconnect_0/bd_0/ip/ip_1/bd_5478_psr_aclk_0_board.xdc] for cell 'design_with_dvb_s2_i/axi_hp1_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_c4b9_psr_aclk_0.xdc] for cell 'design_with_dvb_s2_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_c4b9_psr_aclk_0.xdc] for cell 'design_with_dvb_s2_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_c4b9_psr_aclk_0_board.xdc] for cell 'design_with_dvb_s2_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_hp0_interconnect_0/bd_0/ip/ip_1/bd_c4b9_psr_aclk_0_board.xdc] for cell 'design_with_dvb_s2_i/axi_hp0_interconnect/inst/clk_map/psr_aclk/U0'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_dac_fifo_0/util_rfifo_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_0/axi_ad9361_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_clock_mon_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/up_xfer_status_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/ad_rst_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/xilinx/common/ad_rst_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc]
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[0]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[1]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[2]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[3]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[4]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[5]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[6]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:44]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:44]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_status[7]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:45]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:45]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_ctl[0]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:46]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:46]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_ctl[1]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:47]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:47]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_ctl[2]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:48]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:48]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_ctl[3]'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:49]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:49]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_en_agc'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:50]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:50]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_sync'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:51]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:51]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'gpio_resetb'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:52]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:52]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_csn'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:56]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:56]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_clk'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:57]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:57]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_mosi'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:58]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:58]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'spi_miso'. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:59]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc:59]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/system_constr.xdc]
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/common/zc702/zc702_system_constr.xdc]
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/common/zc702/zc702_system_constr.xdc]
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_0/design_with_dvb_s2_axi_ad9361_0_pps_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_0/design_with_dvb_s2_axi_ad9361_0_pps_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_adc_dma_0/design_with_dvb_s2_axi_ad9361_adc_dma_0_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361_adc_dma/inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_adc_dma_0/design_with_dvb_s2_axi_ad9361_adc_dma_0_constr.xdc:2]
+INFO: [Timing 38-2] Deriving generated clocks [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_adc_dma_0/design_with_dvb_s2_axi_ad9361_adc_dma_0_constr.xdc:2]
+get_clocks: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3215.645 ; gain = 329.969 ; free physical = 1616 ; free virtual = 3685
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_ad9361_adc_dma_0/design_with_dvb_s2_axi_ad9361_adc_dma_0_constr.xdc] for cell 'design_with_dvb_s2_i/axi_ad9361_adc_dma/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk/inst'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_util_ad9361_divclk_0/util_clkdiv_constr.xdc] for cell 'design_with_dvb_s2_i/util_ad9361_divclk/inst'
+Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0_clocks.xdc] for cell 'design_with_dvb_s2_i/axi_dma_0/U0'
+Finished Parsing XDC File [/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.gen/sources_1/bd/design_with_dvb_s2/ip/design_with_dvb_s2_axi_dma_0_0/design_with_dvb_s2_axi_dma_0_0_clocks.xdc] for cell 'design_with_dvb_s2_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 44 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3231.668 ; gain = 0.000 ; free physical = 1625 ; free virtual = 3701
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 351 instances were transformed.
+  OBUFDS => OBUFDS: 8 instances
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 133 instances
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 144 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 50 instances
+  RAM64M => RAM64M (RAMD64E(x4)): 14 instances
+  RAM64X1D => RAM64X1D (RAMD64E(x2)): 2 instances
+
+39 Infos, 22 Warnings, 19 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:20 . Memory (MB): peak = 3231.668 ; gain = 370.004 ; free physical = 1625 ; free virtual = 3701
+Command: opt_design -directive Explore
+INFO: [Vivado_Tcl 4-136] Directive used for opt_design is: Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:00.69 . Memory (MB): peak = 3247.660 ; gain = 15.992 ; free physical = 1617 ; free virtual = 3693
+
+Starting Logic Optimization Task
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 1 Retarget
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axi_ad9361/inst/i_up_axi/up_rack_int_i_1__9 into driver instance design_with_dvb_s2_i/axi_ad9361/inst/i_up_axi/up_rdata_int[31]_i_3__7, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axi_ad9361/inst/i_up_axi/up_wack_int_i_1__9 into driver instance design_with_dvb_s2_i/axi_ad9361/inst/i_up_axi/up_wack_int_i_2__1, which resulted in an inversion of 9 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1 into driver instance design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/s2mm_prmry_reset_out_n_INST_0, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/gaxis_rst_sync.xpm_cdc_sync_rst_inst_i_1 into driver instance design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/gtxd.COMP_TXD_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/mm2s_prmry_reset_out_n_INST_0, which resulted in an inversion of 3 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/sig_rd_rlen_i_1 into driver instance design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/sig_ip2bus_data[10]_i_3, which resulted in an inversion of 14 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/axis_clock_converter_0/inst/gen_async_conv.axisc_async_clock_converter_0/inst_xpm_cdc_sync_rst_i_1 into driver instance design_with_dvb_s2_i/util_vector_logic_0/Res[0]_INST_0, which resulted in an inversion of 1 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/encoded_wr_data[2]_i_1 into driver instance design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/encoded_wr_data[3]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/encoded_wr_data[7]_i_1 into driver instance design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/frame_ram_u/ram_u/encoded_wr_data[8]_i_2, which resulted in an inversion of 2 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/input_conversion_block.ldpc_input_sync_u/input_width_conversion_u/g_downsize.flush_req_i_1 into driver instance design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/ldpc_encoder_u/encoder_u/input_conversion_block.ldpc_input_sync_u/input_width_conversion_u/g_downsize.flush_req_i_2, which resulted in an inversion of 4 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/selected_reg[1]_i_1__0 into driver instance design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/m_axis_tlast_INST_0_i_3, which resulted in an inversion of 8 pins
+INFO: [Opt 31-1287] Pulled Inverter design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/extend_reset_block.rst_i_2 into driver instance design_with_dvb_s2_i/util_reduced_logic_0/inst/Res0, which resulted in an inversion of 1 pins
+INFO: [Opt 31-138] Pushed 15 inverter(s) to 114 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1b6cbfd9f
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:03 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3473
+INFO: [Opt 31-389] Phase Retarget created 284 cells and removed 1802 cells
+INFO: [Opt 31-1021] In phase Retarget, 27 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 4 inverter(s) to 5 load pin(s).
+Phase 2 Constant propagation | Checksum: 22a33e8d1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:03 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3473
+INFO: [Opt 31-389] Phase Constant propagation created 1308 cells and removed 1672 cells
+INFO: [Opt 31-1021] In phase Constant propagation, 36 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 21f5f9515
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:04 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3472
+INFO: [Opt 31-389] Phase Sweep created 2 cells and removed 1231 cells
+INFO: [Opt 31-1021] In phase Sweep, 60 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 21f5f9515
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3472
+INFO: [Opt 31-662] Phase BUFG optimization created 0 cells of which 0 are BUFGs and removed 0 cells.
+
+Phase 5 Shift Register Optimization
+INFO: [Opt 31-1064] SRL Remap converted 0 SRLs to 0 registers and converted 0 registers of register chains to 0 SRLs
+Phase 5 Shift Register Optimization | Checksum: 21f5f9515
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3472
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Phase 6 Post Processing Netlist
+Phase 6 Post Processing Netlist | Checksum: 174a640ff
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1395 ; free virtual = 3472
+INFO: [Opt 31-389] Phase Post Processing Netlist created 0 cells and removed 0 cells
+INFO: [Opt 31-1021] In phase Post Processing Netlist, 40 netlist objects are constrained preventing optimization. Please run opt_design with -debug_log to get more detail. 
+Opt_design Change Summary
+=========================
+
+
+-------------------------------------------------------------------------------------------------------------------------
+|  Phase                        |  #Cells created  |  #Cells Removed  |  #Constrained objects preventing optimizations  |
+-------------------------------------------------------------------------------------------------------------------------
+|  Retarget                     |             284  |            1802  |                                             27  |
+|  Constant propagation         |            1308  |            1672  |                                             36  |
+|  Sweep                        |               2  |            1231  |                                             60  |
+|  BUFG optimization            |               0  |               0  |                                              0  |
+|  Shift Register Optimization  |               0  |               0  |                                              0  |
+|  Post Processing Netlist      |               0  |               0  |                                             40  |
+-------------------------------------------------------------------------------------------------------------------------
+
+
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.06 . Memory (MB): peak = 3457.582 ; gain = 0.000 ; free physical = 1393 ; free virtual = 3471
+Ending Logic Optimization Task | Checksum: 16fd36dbe
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 3457.582 ; gain = 81.812 ; free physical = 1393 ; free virtual = 3471
+
+Starting Netlist Obfuscation Task
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3457.582 ; gain = 0.000 ; free physical = 1393 ; free virtual = 3471
+Ending Netlist Obfuscation Task | Checksum: 16fd36dbe
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3457.582 ; gain = 0.000 ; free physical = 1393 ; free virtual = 3471
+INFO: [Common 17-83] Releasing license: Implementation
+71 Infos, 22 Warnings, 19 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+opt_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3457.582 ; gain = 225.914 ; free physical = 1393 ; free virtual = 3471
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00.16 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3468.555 ; gain = 2.969 ; free physical = 1363 ; free virtual = 3443
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_opt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 3476.875 ; gain = 19.293 ; free physical = 1315 ; free virtual = 3405
+INFO: [runtcl-4] Executing : report_drc -file design_with_dvb_s2_wrapper_drc_opted.rpt -pb design_with_dvb_s2_wrapper_drc_opted.pb -rpx design_with_dvb_s2_wrapper_drc_opted.rpx
+Command: report_drc -file design_with_dvb_s2_wrapper_drc_opted.rpt -pb design_with_dvb_s2_wrapper_drc_opted.pb -rpx design_with_dvb_s2_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_drc_opted.rpt.
+report_drc completed successfully
+Command: place_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1839 rule limit reached: 20 violations have been found.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/arbitrate_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/g_interleaved.selected_next_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/g_interleaved.selected_next_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/selected_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/selected_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/arbitrate_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/selected_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/selected_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/physical_layer_scrambler/m_tvalid_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/plframe_header_gen_u/m_tvalid_i_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/plframe_dbg_u/FSM_sequential_ctrl_fsm_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/plframe_dbg_u/FSM_sequential_ctrl_fsm_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/ENBWREN (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/regmap_block.regmap_u/s_reg_config_force_output_ready_r_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/arbitrate_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/g_interleaved.selected_next_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/g_interleaved.selected_next_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/selected_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/arbiter_header_payload.arbiter_header_payload_u/selected_reg_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/arbitrate_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1839] RAMB36 async control check: The RAMB36E1 design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg has an input control pin design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg/WEBWE[7] (net: design_with_dvb_s2_i/axi_fifo_mm_s_0/U0/COMP_IPIC2AXI_S/grxd.COMP_RX_FIFO/gfifo_gen.COMP_AXIS_FG_FIFO/COMP_FIFO/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/ena) which is driven by a register (design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/encoder_u/physical_layer_framer_u/dummy_frame_arbiter_block.dummy_frame_arbiter_u/selected_reg_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[5] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_1[0]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[0]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[6] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_1[1]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[1]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[7] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_1[2]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[2]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[8] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_1[3]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/ADDRBWRADDR[9] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg_1[4]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_waddr_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[0] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[1] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[2] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg has an input control pin design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/m_ram_reg/WEBWE[3] (net: design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/i_mem/WEBWE[0]) which is driven by a register (design_with_dvb_s2_i/axi_ad9361_dac_fifo/inst/din_wr_reg) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors, 30 Warnings
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 46-5] The placer was invoked with the 'Explore' directive.
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 4 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1239 ; free virtual = 3332
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: d784035c
+
+Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.04 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1239 ; free virtual = 3332
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1239 ; free virtual = 3332
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 1483cab1a
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:03 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1273 ; free virtual = 3370
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 11a1cf0c7
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1227 ; free virtual = 3325
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11a1cf0c7
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1227 ; free virtual = 3325
+Phase 1 Placer Initialization | Checksum: 11a1cf0c7
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:08 . Memory (MB): peak = 3628.941 ; gain = 0.000 ; free physical = 1227 ; free virtual = 3325
+
+Phase 2 Global Placement
+
+Phase 2.1 Floorplanning
+Phase 2.1 Floorplanning | Checksum: 1adb0c9eb
+
+Time (s): cpu = 00:00:18 ; elapsed = 00:00:09 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1193 ; free virtual = 3292
+
+Phase 2.2 Update Timing before SLR Path Opt
+Phase 2.2 Update Timing before SLR Path Opt | Checksum: 1031952c8
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1189 ; free virtual = 3287
+
+Phase 2.3 Post-Processing in Floorplanning
+Phase 2.3 Post-Processing in Floorplanning | Checksum: d398ef48
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:10 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1189 ; free virtual = 3287
+
+Phase 2.4 Global Placement Core
+
+Phase 2.4.1 Physical Synthesis In Placer
+INFO: [Physopt 32-1035] Found 2 LUTNM shape to break, 844 LUT instances to create LUTNM shape
+INFO: [Physopt 32-1044] Break lutnm for timing: one critical 2, two critical 0, total 2, new lutff created 1
+INFO: [Physopt 32-1138] End 1 Pass. Optimized 336 nets or LUTs. Breaked 2 LUTs, combined 334 existing LUTs and moved 0 existing LUT
+INFO: [Physopt 32-65] No nets found for high-fanout optimization.
+INFO: [Physopt 32-232] Optimized 0 net. Created 0 new instance.
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-456] No candidate cells for DSP register optimization found in the design.
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-1123] No candidate cells found for Shift Register to Pipeline optimization
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-677] No candidate cells for Shift Register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-526] No candidate cells for BRAM register optimization found in the design
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-846] No candidate cells for URAM register optimization found in the design
+INFO: [Physopt 32-775] End 2 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+INFO: [Physopt 32-949] No candidate nets found for dynamic/static region interface net replication
+INFO: [Physopt 32-775] End 1 Pass. Optimized 0 net or cell. Created 0 new cell, deleted 0 existing cell and moved 0 existing cell
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3644.336 ; gain = 0.000 ; free physical = 1073 ; free virtual = 3290
+
+Summary of Physical Synthesis Optimizations
+============================================
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  Optimization                                     |  Added Cells  |  Removed Cells  |  Optimized Cells/Nets  |  Dont Touch  |  Iterations  |  Elapsed   |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+|  LUT Combining                                    |            2  |            334  |                   336  |           0  |           1  |  00:00:00  |
+|  Retime                                           |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Very High Fanout                                 |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  DSP Register                                     |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register to Pipeline                       |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Shift Register                                   |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  BRAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  URAM Register                                    |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Dynamic/Static Region Interface Net Replication  |            0  |              0  |                     0  |           0  |           1  |  00:00:00  |
+|  Total                                            |            2  |            334  |                   336  |           0  |           9  |  00:00:01  |
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+Phase 2.4.1 Physical Synthesis In Placer | Checksum: f73637e2
+
+Time (s): cpu = 00:00:53 ; elapsed = 00:00:25 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1088 ; free virtual = 3272
+Phase 2.4 Global Placement Core | Checksum: 9895fa67
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:26 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1006 ; free virtual = 3272
+Phase 2 Global Placement | Checksum: 9895fa67
+
+Time (s): cpu = 00:00:56 ; elapsed = 00:00:26 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1013 ; free virtual = 3279
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: 9b0e18d5
+
+Time (s): cpu = 00:00:59 ; elapsed = 00:00:28 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1050 ; free virtual = 3256
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1203017e1
+
+Time (s): cpu = 00:01:06 ; elapsed = 00:00:31 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 998 ; free virtual = 3254
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: 10fa0b68b
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 998 ; free virtual = 3254
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 63eed485
+
+Time (s): cpu = 00:01:07 ; elapsed = 00:00:31 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 997 ; free virtual = 3254
+
+Phase 3.5 Fast Optimization
+Phase 3.5 Fast Optimization | Checksum: 12638a878
+
+Time (s): cpu = 00:01:13 ; elapsed = 00:00:33 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1045 ; free virtual = 3264
+
+Phase 3.6 Small Shape Detail Placement
+Phase 3.6 Small Shape Detail Placement | Checksum: 16d8ab8da
+
+Time (s): cpu = 00:01:19 ; elapsed = 00:00:38 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1045 ; free virtual = 3226
+
+Phase 3.7 Re-assign LUT pins
+Phase 3.7 Re-assign LUT pins | Checksum: 15d824d50
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:39 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1027 ; free virtual = 3225
+
+Phase 3.8 Pipeline Register Optimization
+Phase 3.8 Pipeline Register Optimization | Checksum: 4325223d
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:40 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1026 ; free virtual = 3225
+Phase 3 Detail Placement | Checksum: 4325223d
+
+Time (s): cpu = 00:01:20 ; elapsed = 00:00:40 . Memory (MB): peak = 3644.336 ; gain = 15.395 ; free physical = 1026 ; free virtual = 3225
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 127995db2
+
+Phase 4.1.1.1 BUFG Insertion
+
+Starting Physical Synthesis Task
+
+Phase 1 Physical Synthesis Initialization
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 4 CPUs
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=-0.327 | TNS=-0.685 |
+Phase 1 Physical Synthesis Initialization | Checksum: 194fd03c6
+
+Time (s): cpu = 00:00:04 ; elapsed = 00:00:02 . Memory (MB): peak = 3689.148 ; gain = 0.000 ; free physical = 880 ; free virtual = 3192
+INFO: [Place 46-33] Processed net design_with_dvb_s2_i/axi_ad9361/inst/i_tx/i_tx_channel_0/i_up_dac_channel/i_xfer_cntrl/s_axi_aresetn_0, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-33] Processed net design_with_dvb_s2_i/dvbs2_encoder_wrapper_1/U0/rst, BUFG insertion was skipped due to placement/routing conflicts.
+INFO: [Place 46-56] BUFG insertion identified 2 candidate nets. Inserted BUFG: 0, Replicated BUFG Driver: 0, Skipped due to Placement/Routing Conflicts: 2, Skipped due to Timing Degradation: 0, Skipped due to Illegal Netlist: 0.
+Ending Physical Synthesis Task | Checksum: d8a321b1
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 3689.148 ; gain = 0.000 ; free physical = 797 ; free virtual = 3190
+Phase 4.1.1.1 BUFG Insertion | Checksum: 127995db2
+
+Time (s): cpu = 00:01:39 ; elapsed = 00:00:48 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 799 ; free virtual = 3191
+
+Phase 4.1.1.2 Post Placement Timing Optimization
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.104. For the most accurate timing information please run report_timing.
+Phase 4.1.1.2 Post Placement Timing Optimization | Checksum: 142f9aa71
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:13 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 699 ; free virtual = 3178
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:13 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 699 ; free virtual = 3178
+Phase 4.1 Post Commit Optimization | Checksum: 142f9aa71
+
+Time (s): cpu = 00:02:13 ; elapsed = 00:01:13 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 698 ; free virtual = 3178
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 142f9aa71
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:13 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 698 ; free virtual = 3178
+
+Phase 4.3 Placer Reporting
+
+Phase 4.3.1 Print Estimated Congestion
+INFO: [Place 30-612] Post-Placement Estimated Congestion 
+ ____________________________________________________
+|           | Global Congestion | Short Congestion  |
+| Direction | Region Size       | Region Size       |
+|___________|___________________|___________________|
+|      North|                1x1|                2x2|
+|___________|___________________|___________________|
+|      South|                1x1|                2x2|
+|___________|___________________|___________________|
+|       East|                1x1|                2x2|
+|___________|___________________|___________________|
+|       West|                1x1|                1x1|
+|___________|___________________|___________________|
+
+Phase 4.3.1 Print Estimated Congestion | Checksum: 142f9aa71
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:14 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 697 ; free virtual = 3178
+Phase 4.3 Placer Reporting | Checksum: 142f9aa71
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:14 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 698 ; free virtual = 3178
+
+Phase 4.4 Final Placement Cleanup
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3689.148 ; gain = 0.000 ; free physical = 698 ; free virtual = 3178
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:14 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 698 ; free virtual = 3178
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: 1af3203df
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:14 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 698 ; free virtual = 3178
+Ending Placer Task | Checksum: 161dd4b17
+
+Time (s): cpu = 00:02:14 ; elapsed = 00:01:14 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 718 ; free virtual = 3168
+INFO: [Common 17-83] Releasing license: Implementation
+114 Infos, 52 Warnings, 19 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:02:18 ; elapsed = 00:01:15 . Memory (MB): peak = 3689.148 ; gain = 60.207 ; free physical = 753 ; free virtual = 3204
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3703.090 ; gain = 5.938 ; free physical = 604 ; free virtual = 3176
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_placed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:09 . Memory (MB): peak = 3719.098 ; gain = 29.949 ; free physical = 682 ; free virtual = 3164
+INFO: [runtcl-4] Executing : report_io -file design_with_dvb_s2_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00.13 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3719.098 ; gain = 0.000 ; free physical = 672 ; free virtual = 3150
+INFO: [runtcl-4] Executing : report_utilization -file design_with_dvb_s2_wrapper_utilization_placed.rpt -pb design_with_dvb_s2_wrapper_utilization_placed.pb
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file design_with_dvb_s2_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00.12 ; elapsed = 00:00:00.18 . Memory (MB): peak = 3719.098 ; gain = 0.000 ; free physical = 655 ; free virtual = 3158
+Command: phys_opt_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Vivado_Tcl 4-137] Directive used for phys_opt_design is: Explore
+INFO: [Vivado_Tcl 4-383] Design worst setup slack (WNS) is greater than or equal to 0.000 ns. Skipping all physical synthesis optimizations.
+INFO: [Vivado_Tcl 4-232] No setup violation found. The netlist was not modified.
+INFO: [Common 17-83] Releasing license: Implementation
+124 Infos, 52 Warnings, 19 Critical Warnings and 0 Errors encountered.
+phys_opt_design completed successfully
+phys_opt_design: Time (s): cpu = 00:00:19 ; elapsed = 00:00:08 . Memory (MB): peak = 3719.098 ; gain = 0.000 ; free physical = 315 ; free virtual = 2984
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:08 ; elapsed = 00:00:03 . Memory (MB): peak = 3726.840 ; gain = 7.742 ; free physical = 242 ; free virtual = 2971
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_physopt.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:13 ; elapsed = 00:00:07 . Memory (MB): peak = 3726.840 ; gain = 7.742 ; free physical = 368 ; free virtual = 2941
+Command: route_design -directive Explore
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-270] Using Router directive 'Explore'.
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 4 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: e03cfea8 ConstDB: 0 ShapeSum: 81a04c6f RouteDB: 0
+Post Restoration Checksum: NetGraph: ee655d49 NumContArr: c4f0acf2 Constraints: 0 Timing: 0
+Phase 1 Build RT Design | Checksum: 1b3560a3b
+
+Time (s): cpu = 00:00:21 ; elapsed = 00:00:14 . Memory (MB): peak = 3825.984 ; gain = 48.680 ; free physical = 143 ; free virtual = 2775
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 1b3560a3b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:14 . Memory (MB): peak = 3825.984 ; gain = 48.680 ; free physical = 161 ; free virtual = 2788
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 1b3560a3b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 3837.980 ; gain = 60.676 ; free physical = 140 ; free virtual = 2767
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 1b3560a3b
+
+Time (s): cpu = 00:00:22 ; elapsed = 00:00:15 . Memory (MB): peak = 3837.980 ; gain = 60.676 ; free physical = 141 ; free virtual = 2768
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 11c34fd52
+
+Time (s): cpu = 00:00:42 ; elapsed = 00:00:24 . Memory (MB): peak = 3866.363 ; gain = 89.059 ; free physical = 181 ; free virtual = 2826
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.001  | TNS=0.000  | WHS=-0.356 | THS=-650.567|
+
+
+Phase 2.5 Update Timing for Bus Skew
+
+Phase 2.5.1 Update Timing
+Phase 2.5.1 Update Timing | Checksum: 143e66871
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:30 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 152 ; free virtual = 2803
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.001  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 2.5 Update Timing for Bus Skew | Checksum: 1a33e37c0
+
+Time (s): cpu = 00:01:00 ; elapsed = 00:00:30 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 167 ; free virtual = 2803
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 35219
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 35218
+  Number of Partially Routed Nets     = 1
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 15eaededd
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:30 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 160 ; free virtual = 2797
+
+Phase 3 Initial Routing
+
+Phase 3.1 Global Routing
+Phase 3.1 Global Routing | Checksum: 15eaededd
+
+Time (s): cpu = 00:01:01 ; elapsed = 00:00:30 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 160 ; free virtual = 2797
+Phase 3 Initial Routing | Checksum: 15c0b5aa3
+
+Time (s): cpu = 00:01:11 ; elapsed = 00:00:34 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 160 ; free virtual = 2807
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 3004
+ Number of Nodes with overlaps = 440
+ Number of Nodes with overlaps = 186
+ Number of Nodes with overlaps = 94
+ Number of Nodes with overlaps = 30
+ Number of Nodes with overlaps = 16
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 2
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.156 | TNS=-0.249 | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: 1c7798524
+
+Time (s): cpu = 00:01:43 ; elapsed = 00:00:56 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 133 ; free virtual = 2770
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 147
+ Number of Nodes with overlaps = 75
+ Number of Nodes with overlaps = 32
+ Number of Nodes with overlaps = 12
+ Number of Nodes with overlaps = 9
+ Number of Nodes with overlaps = 5
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.068 | TNS=-0.089 | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: 1532e8c49
+
+Time (s): cpu = 00:01:53 ; elapsed = 00:01:05 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 203 ; free virtual = 2833
+
+Phase 4.3 Global Iteration 2
+ Number of Nodes with overlaps = 117
+ Number of Nodes with overlaps = 61
+ Number of Nodes with overlaps = 20
+ Number of Nodes with overlaps = 4
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.167 | TNS=-0.188 | WHS=N/A    | THS=N/A    |
+
+Phase 4.3 Global Iteration 2 | Checksum: 1bd8a19ab
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:09 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 139 ; free virtual = 2835
+Phase 4 Rip-up And Reroute | Checksum: 1bd8a19ab
+
+Time (s): cpu = 00:01:59 ; elapsed = 00:01:09 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 139 ; free virtual = 2835
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+
+Phase 5.1.1 Update Timing
+Phase 5.1.1 Update Timing | Checksum: 12cf70c4f
+
+Time (s): cpu = 00:02:03 ; elapsed = 00:01:11 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 144 ; free virtual = 2850
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.054 | TNS=-0.054 | WHS=N/A    | THS=N/A    |
+
+ Number of Nodes with overlaps = 0
+Phase 5.1 Delay CleanUp | Checksum: 10c3eec17
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:11 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 142 ; free virtual = 2849
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: 10c3eec17
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:11 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 142 ; free virtual = 2849
+Phase 5 Delay and Skew Optimization | Checksum: 10c3eec17
+
+Time (s): cpu = 00:02:04 ; elapsed = 00:01:11 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 142 ; free virtual = 2849
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: 18346e80b
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:14 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 158 ; free virtual = 2855
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.054 | TNS=-0.054 | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 14517bb97
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:14 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 156 ; free virtual = 2853
+Phase 6 Post Hold Fix | Checksum: 14517bb97
+
+Time (s): cpu = 00:02:09 ; elapsed = 00:01:14 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 156 ; free virtual = 2853
+
+Phase 7 Timing Verification
+
+Phase 7.1 Update Timing
+Phase 7.1 Update Timing | Checksum: 1b9d96562
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:17 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 119 ; free virtual = 2859
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.054 | TNS=-0.054 | WHS=N/A    | THS=N/A    |
+
+Phase 7 Timing Verification | Checksum: 1b9d96562
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:17 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 119 ; free virtual = 2859
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 7.69483 %
+  Global Horizontal Routing Utilization  = 9.65466 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Congestion Report
+North Dir 1x1 Area, Max Cong = 64.8649%, No Congested Regions.
+South Dir 1x1 Area, Max Cong = 62.1622%, No Congested Regions.
+East Dir 1x1 Area, Max Cong = 67.6471%, No Congested Regions.
+West Dir 1x1 Area, Max Cong = 63.2353%, No Congested Regions.
+
+------------------------------
+Reporting congestion hotspots
+------------------------------
+Direction: North
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: South
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: East
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+Direction: West
+----------------
+Congested clusters found at Level 0
+Effective congestion level: 0 Aspect Ratio: 1 Sparse Ratio: 0
+
+Phase 8 Route finalize | Checksum: 1b9d96562
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:17 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 133 ; free virtual = 2876
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1b9d96562
+
+Time (s): cpu = 00:02:17 ; elapsed = 00:01:17 . Memory (MB): peak = 3903.363 ; gain = 126.059 ; free physical = 130 ; free virtual = 2873
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 1b5d230c6
+
+Time (s): cpu = 00:02:20 ; elapsed = 00:01:19 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 124 ; free virtual = 2860
+
+Phase 11 Incr Placement Change
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 3935.379 ; gain = 0.000 ; free physical = 121 ; free virtual = 2857
+INFO: [Place 30-746] Post Placement Timing Summary WNS=0.141. For the most accurate timing information please run report_timing.
+Ending IncrPlace Task | Checksum: 1d156d1aa
+
+Time (s): cpu = 00:00:33 ; elapsed = 00:00:17 . Memory (MB): peak = 3935.379 ; gain = 0.000 ; free physical = 180 ; free virtual = 2873
+Phase 11 Incr Placement Change | Checksum: 1b5d230c6
+
+Time (s): cpu = 00:02:54 ; elapsed = 00:01:37 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 180 ; free virtual = 2873
+
+Phase 12 Build RT Design
+Phase 12 Build RT Design | Checksum: 10dca464b
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:40 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 169 ; free virtual = 2861
+
+Phase 13 Router Initialization
+
+Phase 13.1 Create Timer
+Phase 13.1 Create Timer | Checksum: 10dca464b
+
+Time (s): cpu = 00:02:58 ; elapsed = 00:01:40 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 150 ; free virtual = 2842
+
+Phase 13.2 Fix Topology Constraints
+Phase 13.2 Fix Topology Constraints | Checksum: 10dca464b
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:40 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 132 ; free virtual = 2824
+
+Phase 13.3 Pre Route Cleanup
+Phase 13.3 Pre Route Cleanup | Checksum: 2e117dec
+
+Time (s): cpu = 00:02:59 ; elapsed = 00:01:41 . Memory (MB): peak = 3935.379 ; gain = 158.074 ; free physical = 132 ; free virtual = 2824
+
+Phase 13.4 Update Timing
+Phase 13.4 Update Timing | Checksum: 145fde1a6
+
+Time (s): cpu = 00:03:19 ; elapsed = 00:01:49 . Memory (MB): peak = 3937.148 ; gain = 159.844 ; free physical = 141 ; free virtual = 2794
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.058  | TNS=0.000  | WHS=-0.356 | THS=-648.582|
+
+
+Phase 13.5 Update Timing for Bus Skew
+
+Phase 13.5.1 Update Timing
+Phase 13.5.1 Update Timing | Checksum: 17f10d8b0
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:01:55 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 159 ; free virtual = 2751
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.058  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 13.5 Update Timing for Bus Skew | Checksum: 1043d1d8b
+
+Time (s): cpu = 00:03:37 ; elapsed = 00:01:55 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 159 ; free virtual = 2751
+Phase 13 Router Initialization | Checksum: 1c0d7dac6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:55 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 158 ; free virtual = 2750
+
+Phase 14 Initial Routing
+
+Phase 14.1 Global Routing
+Phase 14.1 Global Routing | Checksum: 1c0d7dac6
+
+Time (s): cpu = 00:03:38 ; elapsed = 00:01:55 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 158 ; free virtual = 2750
+Phase 14 Initial Routing | Checksum: 1a1b022a5
+
+Time (s): cpu = 00:03:39 ; elapsed = 00:01:55 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 157 ; free virtual = 2749
+
+Phase 15 Rip-up And Reroute
+
+Phase 15.1 Global Iteration 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.134 | TNS=-0.326 | WHS=N/A    | THS=N/A    |
+
+Phase 15.1 Global Iteration 0 | Checksum: 16cfe0b2f
+
+Time (s): cpu = 00:03:54 ; elapsed = 00:02:06 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 153 ; free virtual = 2758
+
+Phase 15.2 Global Iteration 1
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.086 | TNS=-0.135 | WHS=N/A    | THS=N/A    |
+
+Phase 15.2 Global Iteration 1 | Checksum: 17daace23
+
+Time (s): cpu = 00:04:04 ; elapsed = 00:02:15 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 161 ; free virtual = 2767
+
+Phase 15.3 Global Iteration 2
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.045 | TNS=-0.045 | WHS=N/A    | THS=N/A    |
+
+Phase 15.3 Global Iteration 2 | Checksum: 892b90bc
+
+Time (s): cpu = 00:04:17 ; elapsed = 00:02:26 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 147 ; free virtual = 2750
+
+Phase 15.4 Global Iteration 3
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=-0.087 | TNS=-0.133 | WHS=N/A    | THS=N/A    |
+
+Phase 15.4 Global Iteration 3 | Checksum: 188f59509
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:02:32 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 148 ; free virtual = 2747
+Phase 15 Rip-up And Reroute | Checksum: 188f59509
+
+Time (s): cpu = 00:04:24 ; elapsed = 00:02:32 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 148 ; free virtual = 2747
+
+Phase 16 Delay and Skew Optimization
+
+Phase 16.1 Delay CleanUp
+
+Phase 16.1.1 Update Timing
+Phase 16.1.1 Update Timing | Checksum: 1ecd540cd
+
+Time (s): cpu = 00:04:29 ; elapsed = 00:02:33 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 140 ; free virtual = 2749
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.070  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 16.1 Delay CleanUp | Checksum: 159352a78
+
+Time (s): cpu = 00:04:29 ; elapsed = 00:02:33 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 139 ; free virtual = 2748
+
+Phase 16.2 Clock Skew Optimization
+Phase 16.2 Clock Skew Optimization | Checksum: 159352a78
+
+Time (s): cpu = 00:04:29 ; elapsed = 00:02:34 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 139 ; free virtual = 2748
+Phase 16 Delay and Skew Optimization | Checksum: 159352a78
+
+Time (s): cpu = 00:04:29 ; elapsed = 00:02:34 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 139 ; free virtual = 2748
+
+Phase 17 Post Hold Fix
+
+Phase 17.1 Hold Fix Iter
+
+Phase 17.1.1 Update Timing
+Phase 17.1.1 Update Timing | Checksum: 1f743ea41
+
+Time (s): cpu = 00:04:34 ; elapsed = 00:02:36 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 143 ; free virtual = 2749
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.070  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 17.1 Hold Fix Iter | Checksum: 1abe1d3d1
+
+Time (s): cpu = 00:04:34 ; elapsed = 00:02:36 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 143 ; free virtual = 2749
+Phase 17 Post Hold Fix | Checksum: 1abe1d3d1
+
+Time (s): cpu = 00:04:34 ; elapsed = 00:02:36 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 143 ; free virtual = 2749
+
+Phase 18 Timing Verification
+
+Phase 18.1 Update Timing
+Phase 18.1 Update Timing | Checksum: 18c8c66b6
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:02:38 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 143 ; free virtual = 2749
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=0.070  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 18 Timing Verification | Checksum: 18c8c66b6
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:02:38 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 143 ; free virtual = 2749
+
+Phase 19 Route finalize
+Phase 19 Route finalize | Checksum: 18c8c66b6
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:02:38 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 142 ; free virtual = 2749
+
+Phase 20 Verifying routed nets
+Phase 20 Verifying routed nets | Checksum: 18c8c66b6
+
+Time (s): cpu = 00:04:41 ; elapsed = 00:02:38 . Memory (MB): peak = 3979.148 ; gain = 201.844 ; free physical = 142 ; free virtual = 2749
+
+Phase 21 Depositing Routes
+Phase 21 Depositing Routes | Checksum: b517e1d8
+
+Time (s): cpu = 00:04:43 ; elapsed = 00:02:40 . Memory (MB): peak = 4011.164 ; gain = 233.859 ; free physical = 142 ; free virtual = 2748
+
+Phase 22 Post Router Timing
+INFO: [Route 35-20] Post Routing Timing Summary | WNS=0.068  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 22 Post Router Timing | Checksum: 105c463b0
+
+Time (s): cpu = 00:05:00 ; elapsed = 00:02:46 . Memory (MB): peak = 4011.164 ; gain = 233.859 ; free physical = 161 ; free virtual = 2780
+INFO: [Route 35-61] The design met the timing requirement.
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:05:00 ; elapsed = 00:02:46 . Memory (MB): peak = 4011.164 ; gain = 233.859 ; free physical = 278 ; free virtual = 2896
+INFO: [Common 17-83] Releasing license: Implementation
+154 Infos, 52 Warnings, 19 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:05:10 ; elapsed = 00:02:49 . Memory (MB): peak = 4011.164 ; gain = 284.324 ; free physical = 278 ; free virtual = 2896
+INFO: [Common 17-600] The following parameters have non-default value.
+general.maxThreads
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:06 ; elapsed = 00:00:02 . Memory (MB): peak = 4011.164 ; gain = 0.000 ; free physical = 213 ; free virtual = 2904
+INFO: [Common 17-1381] The checkpoint '/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_routed.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:09 . Memory (MB): peak = 4011.164 ; gain = 0.000 ; free physical = 264 ; free virtual = 2902
+INFO: [runtcl-4] Executing : report_drc -file design_with_dvb_s2_wrapper_drc_routed.rpt -pb design_with_dvb_s2_wrapper_drc_routed.pb -rpx design_with_dvb_s2_wrapper_drc_routed.rpx
+Command: report_drc -file design_with_dvb_s2_wrapper_drc_routed.rpt -pb design_with_dvb_s2_wrapper_drc_routed.pb -rpx design_with_dvb_s2_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 4 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_drc_routed.rpt.
+report_drc completed successfully
+report_drc: Time (s): cpu = 00:00:19 ; elapsed = 00:00:07 . Memory (MB): peak = 4011.164 ; gain = 0.000 ; free physical = 253 ; free virtual = 2906
+INFO: [runtcl-4] Executing : report_methodology -file design_with_dvb_s2_wrapper_methodology_drc_routed.rpt -pb design_with_dvb_s2_wrapper_methodology_drc_routed.pb -rpx design_with_dvb_s2_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file design_with_dvb_s2_wrapper_methodology_drc_routed.rpt -pb design_with_dvb_s2_wrapper_methodology_drc_routed.pb -rpx design_with_dvb_s2_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 4 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file /home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1/design_with_dvb_s2_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+report_methodology: Time (s): cpu = 00:00:28 ; elapsed = 00:00:09 . Memory (MB): peak = 4011.164 ; gain = 0.000 ; free physical = 261 ; free virtual = 2911
+INFO: [runtcl-4] Executing : report_power -file design_with_dvb_s2_wrapper_power_routed.rpt -pb design_with_dvb_s2_wrapper_power_summary_routed.pb -rpx design_with_dvb_s2_wrapper_power_routed.rpx
+Command: report_power -file design_with_dvb_s2_wrapper_power_routed.rpt -pb design_with_dvb_s2_wrapper_power_summary_routed.pb -rpx design_with_dvb_s2_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+167 Infos, 53 Warnings, 19 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+report_power: Time (s): cpu = 00:00:18 ; elapsed = 00:00:07 . Memory (MB): peak = 4019.168 ; gain = 8.004 ; free physical = 202 ; free virtual = 2883
+INFO: [runtcl-4] Executing : report_route_status -file design_with_dvb_s2_wrapper_route_status.rpt -pb design_with_dvb_s2_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -report_unconstrained -file design_with_dvb_s2_wrapper_timing_summary_routed.rpt -pb design_with_dvb_s2_wrapper_timing_summary_routed.pb -rpx design_with_dvb_s2_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+WARNING: [Timing 38-436] There are set_bus_skew constraint(s) in this design. Please run report_bus_skew to ensure that bus skew requirements are met.
+INFO: [runtcl-4] Executing : report_incremental_reuse -file design_with_dvb_s2_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [runtcl-4] Executing : report_clock_utilization -file design_with_dvb_s2_wrapper_clock_utilization_routed.rpt
+INFO: [runtcl-4] Executing : report_bus_skew -warn_on_violation -file design_with_dvb_s2_wrapper_bus_skew_routed.rpt -pb design_with_dvb_s2_wrapper_bus_skew_routed.pb -rpx design_with_dvb_s2_wrapper_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 4 CPUs
+INFO: [Common 17-206] Exiting Vivado at Wed Jun 26 12:16:32 2024...

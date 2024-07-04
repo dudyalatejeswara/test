@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="design_with_dvb_s2_axi_hp0_interconnect_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hp0_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="design_with_dvb_s2_axi_hp1_interconnect_0_synth_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/design_with_dvb_s2_axi_hp1_interconnect_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="impl_1" LaunchDir="/home/krisemi_satcom/adi/hdl/projects/fmcomms2/zc702/fmcomms2_zc702.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="route_design">
+		<Parent Id="design_with_dvb_s2_axi_hp0_interconnect_0_synth_1"/>
+		<Parent Id="design_with_dvb_s2_axi_hp1_interconnect_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+
